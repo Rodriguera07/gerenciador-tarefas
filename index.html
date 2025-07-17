@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📝 Gerenciador de Tarefas</h1>
+    </header>
+    <main>
+      <form id="formTarefa" autocomplete="off" onsubmit="return false;">
+        <input id="tarefaInput" type="text" placeholder="Digite uma tarefa" aria-label="Nova tarefa">
+        <div class="botoes">
+          <button id="btnAdicionar" type="button">Adicionar</button>
+          <button id="btnRemoverTudo" type="button">Remover Tudo</button>
+        </div>
+      </form>
+      <section aria-label="Lista de tarefas">
+        <ul id="listaTarefas"></ul>
+        <div id="progresso"></div>
+      </section>
+      <button id="toggleTema" type="button">Alternar tema</button>
+    </main>
+    <footer>
+      <small>&copy; 2025 Gerenciador de Tarefas - Rodrigo Dantas</small>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
